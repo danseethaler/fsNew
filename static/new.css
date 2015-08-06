@@ -1,0 +1,26 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+HTML, body {
+    padding: 0px;
+    margin: 0px;
+}
+#topBar {
+    background-color: #DADADA;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1{
+    display: inline;
+}
+
+.questionBlock {
+    max-width: 400px;
+}
+.rightPanel{
+    display: inline-block;
+    float: right;
+}

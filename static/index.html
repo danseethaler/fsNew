@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="new.css">
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="//code.angularjs.org/1.2.5/angular.min.js"></script>
+    <script src="//rootsdev.org/familysearch-javascript-sdk/familysearch-javascript-sdk.js"></script>
+</head>
+
+<body ng-app="app">
+    <div class="container" id="topBar" ng-controller="mainController">
+        <h1 class="intro">Welcome to Know Your Ancestors</h1>
+        <div class="rightPanel">
+            <button ng-click="login()" class="btn btn-success" ng-hide="displayName">Get Started</button>
+            <div class="winner" ng-show="displayName">Welcome {{displayName}}!</div>
+        </div>
+        <div class="questionBlock">
+            <div class="panel panel-default" ng-show="question">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{question}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="questionBox">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item">{{answer1}}</button>
+                            <button type="button" class="list-group-item">{{answer2}}</button>
+                            <button type="button" class="list-group-item">{{answer3}}</button>
+                            <button type="button" class="list-group-item">{{answer4}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mainController.js" charset="utf-8"></script>
+</body>
+
+</html>
